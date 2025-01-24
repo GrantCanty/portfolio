@@ -1,0 +1,15 @@
+.home-card-grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home-card-left{
+    background-color: transparent;
+    padding: .5rem;
+    color: white;
+
+}
+
+.home-card-right{
+    background-color: transparent;
+}
