@@ -1,12 +1,13 @@
 import { ReactElement } from 'react';
+import { HashLink } from 'react-router-hash-link'
 
 const Navigation: React.FC = (): ReactElement => {
     return(
         <nav>
             <ul>
-                <li> <a href='#about'>About </a></li>
-                <li><a href='#portfolio' >Portfolio </a></li>
-                <li><a href='#resume'>Resume </a></li>
+                <li > <HashLink smooth to='/#about' >About </HashLink> </li>
+                <li > <HashLink smooth to='/#portfolio' > Portfolio </HashLink> </li>
+                <li > <HashLink smooth to='/#resume' >Resume</HashLink></li>
             </ul>
         </nav>
     )
