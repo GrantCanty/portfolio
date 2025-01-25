@@ -1,19 +1,29 @@
-.home-card-grid-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.screen {
+    padding-right: 6em;
+    padding-left: 6em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
     color: white;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .home-card-left {
     padding: .5rem;
+    flex: 1;
+    box-sizing: border-box;
+    max-height: 100vh;
     position: sticky;
+    top: 0;
 }
 
 .home-card-right {
-    overflow: auto;
-}
-
-.testing {
-    color: white;
+    flex: 1;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
 }
