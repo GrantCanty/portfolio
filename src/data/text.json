@@ -18,14 +18,41 @@
             "Alongside my studies, I've gained hands-on experience in both customer service, marketing, and business. At Fidelity Investments, I worked closely with a mentor from the tech department on Java-based projects. During my time at AIESEC in France, I built a program that connected to our organization's GraphQL API to automate data management tasks like updating spreadsheets. As a high school student, I created my own lawn mowing business, reaching 30 regular clients in just 5 years.",
             "In my down time, I love to explore Paris, make music, snowboard, travel, and work on coding projects."
         ],
+        "portfolio": [
+            {
+                "title": "Quizzy",
+                "description": "Designed a program using C++ that lets a user create a quiz containing true/false, multiple choice, and long answer questions. The quiz is able to be saved locally as a text file.",
+                "url": "test"
+            },
+            {
+                "title": "Flashcards",
+                "description": "Developed a flashcard Web App using React for front end and Golang for back end. Users can edit or review flashcard decks, create new flashcard decks and add flashcards. Flashcards are saved on the server.",
+                "url": "test"
+            },
+            {
+                "title": "SkiView",
+                "description": "Created a Web App in React to provide current weather conditions at ski resorts using a resort’s longitude and latitude coordinates. The list of ski resorts can be edited.",
+                "url": "test"
+            },
+            {
+                "title": "Crypto Trader",
+                "description": "Building a client for Kraken Crypto exchange API using Golang. Implemented websockets and concurrency.",
+                "url": "https://github.com/GrantCanty/bruit"
+            }
+            
+        ],
         "experience": [
             {
                 "start": "2021",
                 "end": "2024",
                 "type": "Full Time",
                 "company": "Fidelity Investments",
-                "title": "Associé des clients fortunés",
-                "description": "test test test test test"
+                "title": "High Net Worth Associate",
+                "description": [
+                    "Provided efficient communication strategies on product and service calls, averaging over 5 clients per hour.",
+                    "Maintained high attention to detail with 0 errors on equity and mutual fund trades in client accounts.",
+                    "Problem solved and troubleshooted errors on website using system applications in client accounts."
+                ]
             },
             {
                 "start": "2020",
@@ -33,7 +60,13 @@
                 "type": "Internship",
                 "company": "AIESEC in France",
                 "title": "Head of Marketing",
-                "description": "test test test test test"
+                "description": [
+                    "Built the organization’s 1st system to automatically update data trackers using Google Apps Scripts, Google Sheets, and the AIESEC GraphQL API.",
+                    "Created an emailing system that sent email templates to leads using Google Sheets and Google Apps Scripts.",
+                    "Conducted semi-annual PESTEL, SWOT, competitor analyses, and market research to gather insights and adjust organizational processes to better fit the needs of our customers and industry environment.",
+                    "Delivered 21 sessions at 7 conferences and bi-weekly meetings with marketing team members.",
+                    "Grew followers on LinkedIn and Instagram by 17% & 11% with no paid in-platform advertisements."
+                ]
             }
         ],
         "education": [
@@ -82,14 +115,41 @@
             "En parallèle de mes études, j'ai acquis une expérience pratique dans les domaines du service client, du marketing et des affaires. Chez Fidelity Investments, j'ai collaboré avec un mentor du département technique sur des projets basés sur Java. Pendant mon passage chez AIESEC en France, j'ai conçu un programme qui se connectait à l'API GraphQL de notre organisation pour automatiser des tâches de gestion des données, comme la mise à jour de feuilles de calcul. En tant que lycéen, j'ai créé ma propre entreprise de tonte de pelouse, atteignant 30 clients réguliers en seulement 5 ans.",
             "Pendant mon temps libre, j'adore explorer Paris, faire de la musique, du snowboard, voyager, et travailler sur des projets de programmation."
         ],
+        "portfolio": [
+            {
+                "title": "Quizzy",
+                "description": "Programme en C++ qui permet à l'utilisateur de créer un quiz contenant des questions vrai/faux, à choix multiples et à réponse longue. Le quiz peut être sauvegardé localement sous forme de fichier texte.",
+                "url": "test"
+            },
+            {
+                "title": "Flashcards",
+                "description": "Application web de flashcards en utilisant React pour le front-end et Golang pour le back-end. Les utilisateurs peuvent éditer ou réviser des jeux de flashcards, créer de nouveaux jeux de flashcards et ajouter des flashcards. Les flashcards sont sauvegardées sur le serveur.",
+                "url": "test"
+            },
+            {
+                "title": "SkiView",
+                "description": "Création d'une application Web en React pour fournir les conditions météorologiques actuelles dans les stations de ski en utilisant les coordonnées de longitude et de latitude d'une station. La liste des stations de ski peut être modifiée.",
+                "url": "test"
+            },
+            {
+                "title": "Client Crypto",
+                "description": "Client API de l'échange Kraken Crypto en utilisant Golang avec des websockets et le concurrence.",
+                "url": "https://github.com/GrantCanty/bruit"
+            }
+            
+        ],
         "experience": [
             {
                 "start": "2021",
                 "end": "2024",
                 "type": "Temps plein",
                 "company": "Fidelity Investments",
-                "title": "High Net Worth Associate",
-                "description": "test test test test test"
+                "title": "Associé des clients fortunés",
+                "description": [
+                    "Mise en place de stratégies de communication efficaces pour les appels concernant les services.",
+                    "Maintenu un taux de 0 erreur lors des achats des investissements sur les comptes de clients.",
+                    "Dépanné des erreurs sur le site web en utilisant les applications de l'entreprise dans les comptes clients."
+                ]
             },
             {
                 "start": "2020",
@@ -97,7 +157,13 @@
                 "type": "Stage",
                 "company": "AIESEC in France",
                 "title": "Responsable marketing",
-                "description": "test test test test test"
+                "description": [
+                    "Mise en place du premier système de l'organisation pour mettre à jour automatiquement les traqueurs de données en utilisant des scripts Google Apps, Google Sheets et l'API GraphQL d'AIESEC.",
+                    "Conception d'un système d'emailing pour prospects marketing avec scripts Google Apps & Sheets.",
+                    "Réalisation d'analyses semestrielles PESTEL, SWOT et veille de la concurrence, suivi d'études de marché afin de recueillir des informations et d'adapter les processus organisationnels.",
+                    "Présentation de 21 sessions lors de 7 conférences et réunions bi-hebdomadaires avec l'équipe marketing.",
+                    "Augmentation organique du nombre d'abonnements sur LinkedIn et Instagram de 17 % et 11 %."
+                ]
             }
         ],
         "education": [

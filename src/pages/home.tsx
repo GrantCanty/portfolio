@@ -84,7 +84,7 @@ const Home: React.FC = (): ReactElement => {
                                     <About lang={lang} />
                                 </div>
                                 <div className="section" ref={(el) => (sectionRefs.current[1] = el!)}>
-                                    <Portfolio />
+                                    <Portfolio lang={lang} />
                                 </div>
                                 <div className="section" ref={(el) => (sectionRefs.current[2] = el!)}>
                                     <Experience lang={lang} />

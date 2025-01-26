@@ -20,7 +20,6 @@ const Education: React.FC<Props> = (props): ReactElement => {
     return(
         <div id='education' className='education'>
             {info[props.lang]['education'].map((ele: education, key: number) => {
-                console.log(ele)
                 return (
                     <div key={key} className='showcase-item'>
                         <div className="professional-years">

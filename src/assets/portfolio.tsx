@@ -1,16 +1,31 @@
 import { ReactElement } from "react";
+import text from '../data/text.json'
 
-const Portfolio: React.FC = (): ReactElement => {
+let info = Object(text);
+
+interface portfolio {
+    title: string;
+    description: string;
+    url: string;
+}
+
+interface Props {
+    lang: string;
+}
+
+const Portfolio: React.FC<Props> = (props): ReactElement => {
+    
     return(
         <div id='portfolio' className='portfolio'>
-            <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
+            {info[props.lang]['portfolio'].map((ele: portfolio, key: number) => {
+                console.log(ele)
+                return (
+                    <div key={key} className='showcase-item'>
+                        <h2>{ele.title}</h2>
+                        <p>{ele.description}</p>
+                    </div>
+                )
+            })}
         </div>
     )
 }

@@ -10,7 +10,7 @@ interface experience {
     type: string;
     company: string;
     title: string;
-    description: string;
+    description: string[];
 }
 
 interface Props {
@@ -29,7 +29,11 @@ const Experience: React.FC<Props> = (props): ReactElement => {
                         <div className="professional-info">
                             <h2>{ele.title}</h2>
                             <h3>{ele.company} - {ele.type}</h3>
-                            <p>{ele.description}</p>
+                            <ul>
+                            {ele.description.map((val: string, i: number) => {
+                                return <li key={i}>{val}</li>
+                            })}
+                            </ul>
                         </div>
                     </div>
                 )
