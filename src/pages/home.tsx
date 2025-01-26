@@ -5,6 +5,7 @@ import Navigation from '../assets/navigation'
 import About from '../assets/about'
 import Portfolio from '../assets/portfolio'
 import Resume from '../assets/resume'
+import Experience from '../assets/experience'
 import '../styles/home.css';
 
 const Home: React.FC = (): ReactElement => {
@@ -14,15 +15,16 @@ const Home: React.FC = (): ReactElement => {
         <>
         <div className='screen'>
             <div className="container">
-                <header className="home-card-left">
+                <header className="card-left squeeze">
                     <div>
                         <Me />
                         <Navigation />
                     </div>
                 </header>
-                <main className="home-card-right">
+                <main className="card-right squeeze">
                     <About />
                     <Portfolio />
+                    <Experience />
                     <Resume />
                 </main>
             </div>
