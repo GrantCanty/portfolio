@@ -1,38 +1,38 @@
 #root, html, body {
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 .base {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
 }
 
 .lang-select {
-  flex: 0 0 auto;
-  padding: .5rem;
+	flex: 0 0 auto;
+	padding: .5rem;
 }
 
 .lang-select button {
-  position: relative;
-  float: right;
-  margin-right: 8rem;
-  background-color: transparent;
-  border: 2px solid #fbf5f3;
-  color: #fbf5f3;
-  transition: .12s;
+	position: relative;
+	float: right;
+	margin-right: 8rem;
+	background-color: transparent;
+	border: 2px solid #fbf5f3;
+	color: #fbf5f3;
+	transition: .12s;
 }
 
 .lang-select button:hover {
-  background-color: #fbf5f3;
-  color: black;
-  transition: .12s;
-  border: 2px solid #fbf5f3;
+	background-color: #fbf5f3;
+	color: black;
+	transition: .12s;
+	border: 2px solid #fbf5f3;
 }
 
 .screen {
@@ -59,18 +59,18 @@
 }
 
 .card-left, .card-right {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  max-height: 100%;
+	flex: 1;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	max-height: 100%;
 }
 
 .card-right {
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 .card-left {
-    position: sticky;
-    top: 0;
+	position: sticky;
+	top: 0;
 }
