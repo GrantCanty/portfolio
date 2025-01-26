@@ -32,5 +32,5 @@ ul.nav-list li a.active {
     -webkit-text-fill-color: #fbf5f3;
     transition: .12s;
     margin-left: 5px;
-    background: linear-gradient(to top, #48ACF0 50%, transparent 50%);
+    background: linear-gradient(to top, #48ACF0 40%, transparent 40%);
 }
