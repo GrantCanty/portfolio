@@ -5,22 +5,18 @@ import text from '../data/text.json'
 
 interface Props {
     lang: string;
+    activeStates: boolean[];
 }
 
 let info = Object(text)
 
 const Navigation: React.FC<Props> = (props): ReactElement => {
-    Object.keys(info[props.lang]['navigation']).forEach((val) => {
-        console.log(val, info[props.lang]['navigation'][val])
-    })
-
-    let keys: string[] = Object.keys(info[props.lang]['navigation'])
-    
+    console.log("nav: ", props.activeStates)
     return(
         <nav className='nav'>
             <ul className='nav-list'>
-                {keys.map((val: string) => {
-                    return <li > <HashLink smooth to={`/#${val}`}> {info[props.lang]['navigation'][val]} </HashLink> </li>
+                {Object.keys(info[props.lang]['navigation']).map((val: string, key: number) => {
+                    return <li key={key} > <HashLink className={props.activeStates[key] ? "active" : undefined } smooth to={`/#${val}`}> {info[props.lang]['navigation'][val]} </HashLink> </li>
                 })}
             </ul>
         </nav>

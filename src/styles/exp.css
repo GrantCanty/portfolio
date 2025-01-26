@@ -4,18 +4,24 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
+    transition: .12s;
 }
 
 .experience-item:hover {
     background-color: rgba(255,255,255,.15);
+    transition: .12s;
 }
 
 .years {
-    flex: 2;
+    flex: 1;
+}
+
+.years p {
+    font-size: .85rem;
 }
 
 .job-info {
-    flex: 6;
+    flex: 3;
 }
 
 .job-info p {

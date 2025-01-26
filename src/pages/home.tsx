@@ -1,4 +1,4 @@
-import { ReactElement, useState, useRef, useEffect } from 'react';
+import { ReactElement, useState, useRef, useEffect, useCallback } from 'react';
 import Me from '../assets/me'
 import Navigation from '../assets/navigation'
 import About from '../assets/about'
@@ -11,15 +11,44 @@ import '../styles/section.css';
 
 const Home: React.FC = (): ReactElement => {
     const rightRef = useRef<HTMLDivElement>(null);
+    const sectionRefs = useRef<HTMLDivElement[]>([]);
+
     const [lang, setLang] = useState<string>("en");
+    const [activeStates, setActiveStates] = useState<boolean[]>([true, false, false, false, false])
 
     function toggleLang() {
-        setLang((prevState: string) => (prevState === "en" ? 'fr' : 'en')
-    )
+        setLang((prevState: string) => (prevState === "en" ? 'fr' : 'en'))
     }
 
+    const handleScroll = useCallback(() => {
+        if (rightRef.current && sectionRefs.current.length > 0) {
+            const containerTop = rightRef.current.getBoundingClientRect().top;
+
+            const newActiveStates = sectionRefs.current.map((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                return sectionTop <= containerTop + 5 && sectionTop + section.offsetHeight > containerTop + 5; // threshold
+            });
+
+            setActiveStates(newActiveStates);
+        }
+    }, []);
+
     useEffect(() => {
-        const handleScroll = (e: WheelEvent) => {
+        const rightDiv = rightRef.current;
+
+        if (rightDiv) {
+            rightDiv.addEventListener('scroll', handleScroll);
+        }
+
+        return () => {
+            if (rightDiv) {
+                rightDiv.removeEventListener('scroll', handleScroll);
+            }
+        };
+    }, [handleScroll]);
+
+    useEffect(() => {
+        const handleWindowScroll = (e: WheelEvent) => {
         e.preventDefault();
 
         if (rightRef.current) {
@@ -27,10 +56,10 @@ const Home: React.FC = (): ReactElement => {
         }
         };
 
-        window.addEventListener("wheel", handleScroll, { passive: false });
+        window.addEventListener("wheel", handleWindowScroll, { passive: false });
 
         return () => {
-        window.removeEventListener("wheel", handleScroll);
+        window.removeEventListener("wheel", handleWindowScroll);
         };
     }, []);
     
@@ -46,15 +75,25 @@ const Home: React.FC = (): ReactElement => {
                             <header className="card-left">
                                 <div>
                                     <Me lang={lang} />
-                                    <Navigation lang={lang} />
+                                    <Navigation lang={lang} activeStates={activeStates}/>
                                 </div>
                             </header>
                             <main className="card-right" ref={rightRef}>
-                                <About lang={lang} />
-                                <Portfolio />
-                                <Experience />
-                                <Education />
-                                <Resume />
+                                <div ref={(el) => (sectionRefs.current[0] = el!)}>
+                                    <About lang={lang} />
+                                </div>
+                                <div ref={(el) => (sectionRefs.current[1] = el!)}>
+                                    <Portfolio />
+                                </div>
+                                <div ref={(el) => (sectionRefs.current[2] = el!)}>
+                                    <Experience />
+                                </div>
+                                <div ref={(el) => (sectionRefs.current[3] = el!)}>
+                                    <Education />
+                                </div>
+                                <div ref={(el) => (sectionRefs.current[4] = el!)}>
+                                    <Resume />
+                                </div>
                             </main>
                         </div>
                     </div>
