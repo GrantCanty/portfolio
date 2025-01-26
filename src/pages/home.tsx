@@ -39,19 +39,21 @@ const Home: React.FC = (): ReactElement => {
                 <button onClick={toggleLang}>{lang}</button>
             </nav>
             <div className='screen'>
-                <div className="container">
-                    <header className="card-left squeeze">
-                        <div>
-                            <Me />
-                            <Navigation />
-                        </div>
-                    </header>
-                    <main className="card-right squeeze" ref={rightRef}>
-                        <About lang={lang} />
-                        <Portfolio />
-                        <Experience />
-                        <Resume />
-                    </main>
+                <div className='squeeze-side'>
+                    <div className="container">
+                        <header className="card-left">
+                            <div>
+                                <Me />
+                                <Navigation />
+                            </div>
+                        </header>
+                        <main className="card-right" ref={rightRef}>
+                            <About lang={lang} />
+                            <Portfolio />
+                            <Experience />
+                            <Resume />
+                        </main>
+                    </div>
                 </div>
             </div>
         </div>
