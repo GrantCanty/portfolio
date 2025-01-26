@@ -1,16 +1,31 @@
 import { ReactElement } from "react";
+import text from '../data/text.json'
+
+let info = Object(text);
+
+interface experience {
+    start: string;
+    end: string;
+    type: string;
+    company: string;
+    title: string;
+    description: string;
+}
 
 const Experience: React.FC = (): ReactElement => {
     return(
         <div id='experience' className='section experience'>
-            <h2>Experience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum delectus labore, quo consequuntur illum facere itaque adipisci fugit possimus totam doloribus, expedita sequi maiores libero quaerat provident quia voluptas.</p>
+            {info['en']['experience'].map((ele: experience, key: number) => {
+                return (
+                    <div key={key} className='experience'>
+                        <h2>{ele.title}</h2>
+                        <h3>{ele.company} - {ele.type}</h3>
+                        <p>{ele.start} - {ele.end}</p>
+                        <p>{ele.description}</p>
+                    </div>
+                )
+
+            })}
         </div>
     )
 }

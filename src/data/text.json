@@ -11,8 +11,18 @@
             {
                 "start": "2021",
                 "end": "2024",
+                "type": "Full Time",
                 "company": "Fidelity Investments",
-                "title": "High Net Worth Associate"
+                "title": "High Net Worth Associate",
+                "description": "test test test test test"
+            },
+            {
+                "start": "2020",
+                "end": "2021",
+                "type": "Internship",
+                "company": "AIESEC in France",
+                "title": "Head of Marketing",
+                "description": "test test test test test"
             }
         ]
     }
