@@ -1,0 +1,19 @@
+.experience-item {
+    border-radius: 5px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.experience-item:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+.years {
+    flex: 2;
+}
+
+.job-info {
+    flex: 6;
+}
