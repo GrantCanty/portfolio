@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
-import text from '../data/text.json'
+//import text from '../data/text.json'
 
-let info = Object(text);
+//let info = Object(text);
 
 
 

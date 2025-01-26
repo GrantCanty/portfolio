@@ -1,16 +1,27 @@
 import { ReactElement } from 'react';
 import { HashLink } from 'react-router-hash-link'
 import '../styles/navigation.css'
+import text from '../data/text.json'
 
-const Navigation: React.FC = (): ReactElement => {
+interface Props {
+    lang: string;
+}
+
+let info = Object(text)
+
+const Navigation: React.FC<Props> = (props): ReactElement => {
+    Object.keys(info[props.lang]['navigation']).forEach((val) => {
+        console.log(val, info[props.lang]['navigation'][val])
+    })
+
+    let keys: string[] = Object.keys(info[props.lang]['navigation'])
+    
     return(
         <nav className='nav'>
             <ul className='nav-list'>
-                <li > <HashLink smooth to='/#about' >About </HashLink> </li>
-                <li > <HashLink smooth to='/#portfolio' > Portfolio </HashLink> </li>
-                <li > <HashLink smooth to='/#experience' >  Experience </HashLink> </li>
-                <li > <HashLink smooth to='/#education' >  Education </HashLink> </li>
-                <li > <HashLink smooth to='/#resume' >Resume</HashLink></li>
+                {keys.map((val: string) => {
+                    return <li > <HashLink smooth to={`/#${val}`}> {info[props.lang]['navigation'][val]} </HashLink> </li>
+                })}
             </ul>
         </nav>
     )

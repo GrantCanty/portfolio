@@ -26,7 +26,7 @@ button {
 	cursor: pointer;
 }
 
-p {
+p, ul li, li {
 	font-size: 1.1rem;
 }
 
@@ -44,6 +44,6 @@ h1 {
 	margin-bottom: .25rem;
 }
 
-h2 {
+h2, h3 {
 	margin-bottom: .125rem;
 }

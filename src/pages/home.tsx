@@ -45,8 +45,8 @@ const Home: React.FC = (): ReactElement => {
                         <div className="container">
                             <header className="card-left">
                                 <div>
-                                    <Me />
-                                    <Navigation />
+                                    <Me lang={lang} />
+                                    <Navigation lang={lang} />
                                 </div>
                             </header>
                             <main className="card-right" ref={rightRef}>

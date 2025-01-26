@@ -1,5 +1,16 @@
 {
     "en": {
+        "quick_info": [
+            "Master's student in AI",
+            "Aspiring Developer"
+        ],
+        "navigation": {
+            "about": "About",
+            "portfolio": "Portfolio",
+            "experience": "Experience",
+            "education": "Education",
+            "resume": "Resume"
+        },
         "about": [
             "Welcome! 👋", 
             "I'm an aspiring developer with a passion for tackling new challenges and continually learning. I'm motivated by personal growth and the opportunity to contribute meaningfully to the projects I'm part of.", 
@@ -27,13 +38,23 @@
         ]
     },
     "fr": {
+        "quick_info": [
+            "Étudiant en master en IA",
+            "Développeur en devenir"
+        ],
+        "navigation": {
+            "about": "A propos",
+            "portfolio": "Projets",
+            "experience": "Expérience",
+            "education": "Éducation",
+            "resume": "Resumé"
+        },
         "about": [
             "Bienvenue ! 👋",
             "Je suis un développeur en devenir avec une passion pour relever de nouveaux défis et apprendre continuellement. Je suis motivé par le développement personnel et l'opportunité de contribuer de manière significative aux projets auxquels je participe.",
             "Actuellement, je poursuis un master en Intelligence Artificielle et Réseaux Informatiques au CNAM à Paris. J'ai exploré des sujets tels que l'intelligence artificielle, la recherche opérationnelle et l'architecture informatique, et je suis enthousiaste à l'idée d'élargir mes connaissances au cours des prochains semestres.",
             "En parallèle de mes études, j'ai acquis une expérience pratique dans les domaines du service client, du marketing et des affaires. Chez Fidelity Investments, j'ai collaboré avec un mentor du département technique sur des projets basés sur Java. Pendant mon passage chez AIESEC en France, j'ai conçu un programme qui se connectait à l'API GraphQL de notre organisation pour automatiser des tâches de gestion des données, comme la mise à jour de feuilles de calcul. En tant que lycéen, j'ai créé ma propre entreprise de tonte de pelouse, atteignant 30 clients réguliers en seulement 5 ans.",
             "Pendant mon temps libre, j'adore explorer Paris, faire de la musique, du snowboard, voyager, et travailler sur des projets de programmation."
-
         ]
     }
 }
