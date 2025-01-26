@@ -1,0 +1,65 @@
+.showcase-item {
+    border-radius: 5px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    transition: .12s;
+    color: #fbf5f3;
+    text-decoration: none;
+}
+
+.showcase-item:hover {
+    background-color: rgba(255,255,255,.15);
+    transition: .12s;
+    cursor: pointer;
+}
+
+.professional-years {
+    flex: 1;
+}
+
+.professional-years p {
+    font-size: .85rem;
+}
+
+.professional-info {
+    flex: 4;
+}
+
+.professional-info p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.showcase-image {
+    flex: 1;
+}
+
+.showcase-info-wrapper {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-info {
+    flex: 3;
+}
+
+.showcase-stack {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.stack-item {
+    padding: .25rem .75rem;
+    margin: .25rem;
+    border-radius: .5rem;
+    background-color: #48ACF0;
+    font-weight: 700;
+}
+
+.stack-item:nth-child(1) {
+    margin-left: 0;
+}
