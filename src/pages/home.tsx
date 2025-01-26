@@ -26,7 +26,7 @@ const Home: React.FC = (): ReactElement => {
 
             const newActiveStates = sectionRefs.current.map((section) => {
                 const sectionTop = section.getBoundingClientRect().top;
-                return sectionTop <= containerTop + 5 && sectionTop + section.offsetHeight > containerTop + 5; // threshold
+                return sectionTop <= containerTop + 0 && sectionTop + section.offsetHeight > containerTop + 0; // threshold
             });
 
             setActiveStates(newActiveStates);
@@ -80,19 +80,19 @@ const Home: React.FC = (): ReactElement => {
                                 </div>
                             </header>
                             <main className="card-right" ref={rightRef}>
-                                <div ref={(el) => (sectionRefs.current[0] = el!)}>
+                                <div className="section" ref={(el) => (sectionRefs.current[0] = el!)}>
                                     <About lang={lang} />
                                 </div>
-                                <div ref={(el) => (sectionRefs.current[1] = el!)}>
+                                <div className="section" ref={(el) => (sectionRefs.current[1] = el!)}>
                                     <Portfolio />
                                 </div>
-                                <div ref={(el) => (sectionRefs.current[2] = el!)}>
-                                    <Experience />
+                                <div className="section" ref={(el) => (sectionRefs.current[2] = el!)}>
+                                    <Experience lang={lang} />
                                 </div>
-                                <div ref={(el) => (sectionRefs.current[3] = el!)}>
-                                    <Education />
+                                <div className="section" ref={(el) => (sectionRefs.current[3] = el!)}>
+                                    <Education lang={lang} />
                                 </div>
-                                <div ref={(el) => (sectionRefs.current[4] = el!)}>
+                                <div className="section" ref={(el) => (sectionRefs.current[4] = el!)}>
                                     <Resume />
                                 </div>
                             </main>

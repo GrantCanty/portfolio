@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import text from '../data/text.json'
-import '../styles/exp.css'
+import '../styles/professional.css'
 
 let info = Object(text);
 
@@ -13,23 +13,26 @@ interface experience {
     description: string;
 }
 
-const Experience: React.FC = (): ReactElement => {
+interface Props {
+    lang: string;
+}
+
+const Experience: React.FC<Props> = (props): ReactElement => {
     return(
-        <div id='experience' className='section experience'>
-            {info['en']['experience'].map((ele: experience, key: number) => {
+        <div id='experience' className='experience'>
+            {info[props.lang]['experience'].map((ele: experience, key: number) => {
                 return (
-                    <div key={key} className='experience-item'>
-                        <div className="years">
+                    <div key={key} className='showcase-item'>
+                        <div className="professional-years">
                             <p>{ele.start} - {ele.end}</p>
                         </div>
-                        <div className="job-info">
+                        <div className="professional-info">
                             <h2>{ele.title}</h2>
                             <h3>{ele.company} - {ele.type}</h3>
                             <p>{ele.description}</p>
                         </div>
                     </div>
                 )
-
             })}
         </div>
     )

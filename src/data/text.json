@@ -24,7 +24,7 @@
                 "end": "2024",
                 "type": "Full Time",
                 "company": "Fidelity Investments",
-                "title": "High Net Worth Associate",
+                "title": "Associé des clients fortunés",
                 "description": "test test test test test"
             },
             {
@@ -34,6 +34,32 @@
                 "company": "AIESEC in France",
                 "title": "Head of Marketing",
                 "description": "test test test test test"
+            }
+        ],
+        "education": [
+            {
+                "start": "2024",
+                "end": "Present",
+                "university": "CNAM",
+                "location": "Paris, France",
+                "major": "Artificial Intelligence and Computer Networks",
+                "description": "test test test test"
+            },
+            {
+                "start": "2017",
+                "end": "2021",
+                "university": "Ohio University",
+                "location": "Athens, Ohio, USA",
+                "major": "Finance",
+                "description": "test test test test"
+            },
+            {
+                "start": "2017",
+                "end": "2021",
+                "university": "Ohio University",
+                "location": "Athens, Ohio, USA",
+                "major": "International Business",
+                "description": "test test test test"
             }
         ]
     },
@@ -55,6 +81,50 @@
             "Actuellement, je poursuis un master en Intelligence Artificielle et Réseaux Informatiques au CNAM à Paris. J'ai exploré des sujets tels que l'intelligence artificielle, la recherche opérationnelle et l'architecture informatique, et je suis enthousiaste à l'idée d'élargir mes connaissances au cours des prochains semestres.",
             "En parallèle de mes études, j'ai acquis une expérience pratique dans les domaines du service client, du marketing et des affaires. Chez Fidelity Investments, j'ai collaboré avec un mentor du département technique sur des projets basés sur Java. Pendant mon passage chez AIESEC en France, j'ai conçu un programme qui se connectait à l'API GraphQL de notre organisation pour automatiser des tâches de gestion des données, comme la mise à jour de feuilles de calcul. En tant que lycéen, j'ai créé ma propre entreprise de tonte de pelouse, atteignant 30 clients réguliers en seulement 5 ans.",
             "Pendant mon temps libre, j'adore explorer Paris, faire de la musique, du snowboard, voyager, et travailler sur des projets de programmation."
+        ],
+        "experience": [
+            {
+                "start": "2021",
+                "end": "2024",
+                "type": "Temps plein",
+                "company": "Fidelity Investments",
+                "title": "High Net Worth Associate",
+                "description": "test test test test test"
+            },
+            {
+                "start": "2020",
+                "end": "2021",
+                "type": "Stage",
+                "company": "AIESEC in France",
+                "title": "Responsable marketing",
+                "description": "test test test test test"
+            }
+        ],
+        "education": [
+            {
+                "start": "2024",
+                "end": "Présent",
+                "university": "CNAM",
+                "location": "Paris",
+                "major": "Intelligence artificielle et réseaux informatiques",
+                "description": "test test test test"
+            },
+            {
+                "start": "2017",
+                "end": "2021",
+                "university": "Ohio University",
+                "location": "Athens, Ohio, États-Unis",
+                "major": "Finance",
+                "description": "test test test test"
+            },
+            {
+                "start": "2017",
+                "end": "2021",
+                "university": "Ohio University",
+                "location": "Athens, Ohio, États-Unis",
+                "major": "Commerce internationale",
+                "description": "test test test test"
+            }
         ]
     }
 }
