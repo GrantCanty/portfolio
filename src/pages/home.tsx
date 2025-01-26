@@ -47,7 +47,7 @@ const Home: React.FC = (): ReactElement => {
                         </div>
                     </header>
                     <main className="card-right squeeze" ref={rightRef}>
-                        <About />
+                        <About lang={lang} />
                         <Portfolio />
                         <Experience />
                         <Resume />
