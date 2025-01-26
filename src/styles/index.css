@@ -26,6 +26,10 @@ button {
 	cursor: pointer;
 }
 
+a {
+	text-decoration: none;
+}
+
 p, ul li, li {
 	font-size: 1.1rem;
 }

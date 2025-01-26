@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import text from '../data/text.json'
-import '../styles/professional.css'
+import '../styles/showcase.css'
 
 let info = Object(text);
 

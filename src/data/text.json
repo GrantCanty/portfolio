@@ -22,22 +22,38 @@
             {
                 "title": "Quizzy",
                 "description": "Designed a program using C++ that lets a user create a quiz containing true/false, multiple choice, and long answer questions. The quiz is able to be saved locally as a text file.",
-                "url": "test"
+                "url": "test",
+                "tech_stack": [
+                    "C++"
+                ]
             },
             {
                 "title": "Flashcards",
                 "description": "Developed a flashcard Web App using React for front end and Golang for back end. Users can edit or review flashcard decks, create new flashcard decks and add flashcards. Flashcards are saved on the server.",
-                "url": "test"
+                "url": "test",
+                "tech_stack": [
+                    "Go",
+                    "React",
+                    "JavaScript",
+                    "CSS"
+                ]
             },
             {
                 "title": "SkiView",
-                "description": "Created a Web App in React to provide current weather conditions at ski resorts using a resort’s longitude and latitude coordinates. The list of ski resorts can be edited.",
-                "url": "test"
+                "description": "Created a Web App in React to provide current weather conditions at ski resorts using a resort's longitude and latitude coordinates. The list of ski resorts can be edited.",
+                "url": "test",
+                "tech_stack": [
+                    "React",
+                    "JavaScript"
+                ]
             },
             {
                 "title": "Crypto Trader",
                 "description": "Building a client for Kraken Crypto exchange API using Golang. Implemented websockets and concurrency.",
-                "url": "https://github.com/GrantCanty/bruit"
+                "url": "https://github.com/GrantCanty/bruit",
+                "tech_stack": [
+                    "Go"
+                ]
             }
             
         ],
@@ -61,7 +77,7 @@
                 "company": "AIESEC in France",
                 "title": "Head of Marketing",
                 "description": [
-                    "Built the organization’s 1st system to automatically update data trackers using Google Apps Scripts, Google Sheets, and the AIESEC GraphQL API.",
+                    "Built the organization's 1st system to automatically update data trackers using Google Apps Scripts, Google Sheets, and the AIESEC GraphQL API.",
                     "Created an emailing system that sent email templates to leads using Google Sheets and Google Apps Scripts.",
                     "Conducted semi-annual PESTEL, SWOT, competitor analyses, and market research to gather insights and adjust organizational processes to better fit the needs of our customers and industry environment.",
                     "Delivered 21 sessions at 7 conferences and bi-weekly meetings with marketing team members.",
@@ -119,22 +135,38 @@
             {
                 "title": "Quizzy",
                 "description": "Programme en C++ qui permet à l'utilisateur de créer un quiz contenant des questions vrai/faux, à choix multiples et à réponse longue. Le quiz peut être sauvegardé localement sous forme de fichier texte.",
-                "url": "test"
+                "url": "test",
+                "tech_stack": [
+                    "C++"
+                ]
             },
             {
                 "title": "Flashcards",
                 "description": "Application web de flashcards en utilisant React pour le front-end et Golang pour le back-end. Les utilisateurs peuvent éditer ou réviser des jeux de flashcards, créer de nouveaux jeux de flashcards et ajouter des flashcards. Les flashcards sont sauvegardées sur le serveur.",
-                "url": "test"
+                "url": "test",
+                "tech_stack": [
+                    "Go",
+                    "React",
+                    "JavaScript",
+                    "CSS"
+                ]
             },
             {
                 "title": "SkiView",
                 "description": "Création d'une application Web en React pour fournir les conditions météorologiques actuelles dans les stations de ski en utilisant les coordonnées de longitude et de latitude d'une station. La liste des stations de ski peut être modifiée.",
-                "url": "test"
+                "url": "test",
+                "tech_stack": [
+                    "React",
+                    "JavaScript"
+                ]
             },
             {
                 "title": "Client Crypto",
                 "description": "Client API de l'échange Kraken Crypto en utilisant Golang avec des websockets et le concurrence.",
-                "url": "https://github.com/GrantCanty/bruit"
+                "url": "https://github.com/GrantCanty/bruit",
+                "tech_stack": [
+                    "Go"
+                ]
             }
             
         ],
