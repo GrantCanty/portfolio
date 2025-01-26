@@ -15,18 +15,22 @@ ul.nav-list li {
 ul.nav-list li a {
     color: #E7DCD7;
     text-decoration: none;
+    transition: .12s;
 }
 
 ul.nav-list li a:hover {
     color: #fbf5f3;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: #fbf5f3;
+    transition: .12s;
+    margin-left: 5px;
 }
 
-ul.nav-list li a::after {
-    display: block;
-    content: attr(title);
-    font-weight: bold;
-    height: 1px;
-    color: transparent;
-    overflow: hidden;
-    visibility: hidden;
+ul.nav-list li a.active {
+    color: #fbf5f3;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: #fbf5f3;
+    transition: .12s;
+    margin-left: 5px;
+    background: linear-gradient(to top, #48ACF0 50%, transparent 50%);
 }
