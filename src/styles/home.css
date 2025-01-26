@@ -1,6 +1,11 @@
 .screen {
-    padding-right: 6em;
-    padding-left: 6em;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.squeeze {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .container{
@@ -12,8 +17,7 @@
     position: relative;
 }
 
-.home-card-left {
-    padding: .5rem;
+.card-left {
     flex: 1;
     box-sizing: border-box;
     max-height: 100vh;
@@ -21,7 +25,7 @@
     top: 0;
 }
 
-.home-card-right {
+.card-right {
     flex: 1;
     box-sizing: border-box;
     height: 100vh;
