@@ -4,7 +4,7 @@ import '../styles/navigation.css'
 
 const Navigation: React.FC = (): ReactElement => {
     return(
-        <nav>
+        <nav className='nav'>
             <ul className='nav-list'>
                 <li > <HashLink smooth to='/#about' >About </HashLink> </li>
                 <li > <HashLink smooth to='/#portfolio' > Portfolio </HashLink> </li>

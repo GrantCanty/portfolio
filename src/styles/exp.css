@@ -17,3 +17,7 @@
 .job-info {
     flex: 6;
 }
+
+.job-info p {
+    margin-bottom: 0;
+}
