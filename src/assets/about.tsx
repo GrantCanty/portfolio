@@ -9,7 +9,7 @@ let info = Object(text)
 
 const About: React.FC<Props> = (props): ReactElement => { 
     return(
-        <div id='about' className='section about'>
+        <div id='about' className='about'>
             {info[props.lang]['about'].map((ele: string, key: number) => {
                 return <p key={key}>{ele}</p>
             })}

@@ -1,4 +1,4 @@
-.experience-item {
+.showcase-item {
     border-radius: 5px;
     padding: .5rem;
     display: flex;
@@ -7,24 +7,24 @@
     transition: .12s;
 }
 
-.experience-item:hover {
+.showcase-item:hover {
     background-color: rgba(255,255,255,.15);
     transition: .12s;
 }
 
-.years {
+.professional-years {
     flex: 1;
 }
 
-.years p {
+.professional-years p {
     font-size: .85rem;
 }
 
-.job-info {
+.professional-info {
     flex: 3;
 }
 
-.job-info p {
+.professional-info p {
     margin-bottom: 0;
     margin-top: 0;
 }
