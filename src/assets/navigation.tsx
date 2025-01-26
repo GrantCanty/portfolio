@@ -11,7 +11,6 @@ interface Props {
 let info = Object(text)
 
 const Navigation: React.FC<Props> = (props): ReactElement => {
-    console.log("nav: ", props.activeStates)
     return(
         <nav className='nav'>
             <ul className='nav-list'>
