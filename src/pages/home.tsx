@@ -76,6 +76,7 @@ const Home: React.FC = (): ReactElement => {
                                 <div>
                                     <Me lang={lang} />
                                     <Navigation lang={lang} activeStates={activeStates}/>
+                                    <div>social media will go here</div>
                                 </div>
                             </header>
                             <main className="card-right" ref={rightRef}>
