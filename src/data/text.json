@@ -92,23 +92,15 @@
                 "university": "CNAM",
                 "location": "Paris, France",
                 "major": "Artificial Intelligence and Computer Networks",
-                "description": "test test test test"
+                "description": "Taking courses on Artificial Intelligence, Operational Research, Computer Architecture & more."
             },
             {
                 "start": "2017",
                 "end": "2021",
                 "university": "Ohio University",
                 "location": "Athens, Ohio, USA",
-                "major": "Finance",
-                "description": "test test test test"
-            },
-            {
-                "start": "2017",
-                "end": "2021",
-                "university": "Ohio University",
-                "location": "Athens, Ohio, USA",
-                "major": "International Business",
-                "description": "test test test test"
+                "major": "Finance, International Business",
+                "description": "Completed 2 majors in Finance and International Business, taking classes on Financial Valuation, International Market Entry, Bank Management, Cross Cultural Leadership & more."
             }
         ]
     },
