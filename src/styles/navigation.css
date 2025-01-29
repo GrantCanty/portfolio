@@ -1,5 +1,6 @@
 nav.nav {
     margin-top: 3rem;
+    flex-grow: 1;
 }
 
 ul.nav-list {

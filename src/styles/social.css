@@ -1,0 +1,27 @@
+.social-media {
+	margin-bottom: 3rem;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media-list li {
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.social-media-list a li {
+    color: white;
+}
+
+.small {
+    height: 2rem;
+    width: 2rem;
+}
+

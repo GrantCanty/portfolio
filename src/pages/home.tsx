@@ -6,6 +6,7 @@ import Portfolio from '../assets/portfolio'
 import Resume from '../assets/resume'
 import Experience from '../assets/experience'
 import Education from '../assets/education'
+import Social from '../assets/social'
 import '../styles/home.css';
 import '../styles/section.css';
 
@@ -73,11 +74,9 @@ const Home: React.FC = (): ReactElement => {
                     <div className='squeeze-side'>
                         <div className="container">
                             <header className="card-left">
-                                <div>
-                                    <Me lang={lang} />
-                                    <Navigation lang={lang} activeStates={activeStates}/>
-                                    <div>social media will go here</div>
-                                </div>
+                                <Me lang={lang} />
+                                <Navigation lang={lang} activeStates={activeStates}/>
+                                <Social />
                             </header>
                             <main className="card-right" ref={rightRef}>
                                 <div className="section" ref={(el) => (sectionRefs.current[0] = el!)}>
