@@ -9,10 +9,12 @@ interface portfolio {
     description: string;
     url: string;
     tech_stack: string[];
+    img_path: string;
 }
 
 interface Props {
     lang: string;
+    images: string[];
 }
 
 const Portfolio: React.FC<Props> = (props): ReactElement => {
@@ -20,25 +22,24 @@ const Portfolio: React.FC<Props> = (props): ReactElement => {
     return(
         <div id='portfolio' className='portfolio'>
             {info[props.lang]['portfolio'].map((ele: portfolio, key: number) => {
-                console.log(ele)
                 return (
-                    <Link to={ele.url}>
-                    <div key={key} className='showcase-item'>
-                        <div className="showcase-image">
-                            
-                        </div>
-                        <div className="showcase-info-wrapper">
-                            <div className="showcase-info">
-                                <h2>{ele.title}</h2>
-                                <p>{ele.description}</p>
+                    <Link key={key} to={ele.url}>
+                        <div  className='showcase-item'>
+                            <div className="showcase-image">
+                                <img src={props.images[key]}></img>
                             </div>
-                            <div className="showcase-stack">
-                                {ele.tech_stack.map((val: string) => {
-                                    return <div className="stack-item">{val}</div>
-                                })}
+                            <div className="showcase-info-wrapper">
+                                <div className="showcase-info">
+                                    <h2>{ele.title}</h2>
+                                    <p>{ele.description}</p>
+                                </div>
+                                <div className="showcase-stack">
+                                    {ele.tech_stack.map((val: string, key: number) => {
+                                        return <div key={key} className="stack-item">{val}</div>
+                                    })}
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </Link>
                 )
             })}

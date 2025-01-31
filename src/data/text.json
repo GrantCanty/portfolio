@@ -20,16 +20,17 @@
         ],
         "portfolio": [
             {
-                "title": "Quizzy",
-                "description": "Designed a program using C++ that lets a user create a quiz containing true/false, multiple choice, and long answer questions. The quiz is able to be saved locally as a text file.",
-                "url": "test",
+                "title": "Crypto Trader",
+                "description": "Building an automated system in Golang to place trades for cryptocurrencies that implements custom trading strategies defined by users. Programmed a client for the Kraken Crypto exchange Rest and Websocket APIs. Implementing concurrency, channels, mutexes & linked lists. Using InfluxDB for time series data storage.",
+                "url": "https://github.com/GrantCanty/bruit",
                 "tech_stack": [
-                    "C++"
-                ]
+                    "Go"
+                ],
+                "img_path": "../images/bruit.png"
             },
             {
                 "title": "Flashcards",
-                "description": "Developed a flashcard Web App using React for front end and Golang for back end. Users can edit or review flashcard decks, create new flashcard decks and add flashcards. Flashcards are saved on the server.",
+                "description": "Developed a flashcard Web App using React for front end and Golang for back end. Users can edit or review flashcard decks as well as create new flashcard decks. Each flashcard deck contains individual flashcards with a description and an answer. Flashcard decks and each flashcard are saved in memory. This project takes advantage of the React Router for the different edit/review functionalities and state for a  form to input data to create new flashcard decks.",
                 "url": "test",
                 "tech_stack": [
                     "Go",
@@ -39,23 +40,22 @@
                 ]
             },
             {
+                "title": "Quizzy",
+                "description": "Designed a program using C++ that lets a user create a quiz containing true/false, multiple choice, and longanswer questions. This project takes advantage of inheritance by using an Answer parent class that is extended by children classes with their respective answer types. The quiz is able to be saved locally as a text file.",
+                "url": "test",
+                "tech_stack": [
+                    "C++"
+                ]
+            },
+            {
                 "title": "SkiView",
                 "description": "Created a Web App in React to provide current weather conditions at ski resorts using a resort's longitude and latitude coordinates. The list of ski resorts can be edited.",
-                "url": "test",
+                "url": "https://ski-view.vercel.app/",
                 "tech_stack": [
                     "React",
                     "JavaScript"
                 ]
-            },
-            {
-                "title": "Crypto Trader",
-                "description": "Building a client for Kraken Crypto exchange API using Golang. Implemented websockets and concurrency.",
-                "url": "https://github.com/GrantCanty/bruit",
-                "tech_stack": [
-                    "Go"
-                ]
             }
-            
         ],
         "experience": [
             {

@@ -10,6 +10,9 @@ import Social from '../assets/social'
 import '../styles/home.css';
 import '../styles/section.css';
 
+import bruitpic from '../images/bruit.png'
+import skiviewpic from '../images/skiview.png'
+
 const Home: React.FC = (): ReactElement => {
     const rightRef = useRef<HTMLDivElement>(null);
     const sectionRefs = useRef<HTMLDivElement[]>([]);
@@ -63,6 +66,12 @@ const Home: React.FC = (): ReactElement => {
         window.removeEventListener("wheel", handleWindowScroll);
         };
     }, []);
+
+    let imagesArr: string[] = []
+    imagesArr.push(bruitpic)
+    imagesArr.push("")
+    imagesArr.push("")
+    imagesArr.push(skiviewpic)
     
     return(
         <>
@@ -83,7 +92,7 @@ const Home: React.FC = (): ReactElement => {
                                     <About lang={lang} />
                                 </div>
                                 <div className="section" ref={(el) => (sectionRefs.current[1] = el!)}>
-                                    <Portfolio lang={lang} />
+                                    <Portfolio lang={lang} images={imagesArr} />
                                 </div>
                                 <div className="section" ref={(el) => (sectionRefs.current[2] = el!)}>
                                     <Experience lang={lang} />
