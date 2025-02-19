@@ -10,8 +10,10 @@ import Social from '../assets/social'
 import '../styles/home.css';
 import '../styles/section.css';
 
-import bruitpic from '../images/bruit.png'
-import skiviewpic from '../images/skiview.png'
+import bruitpic from '../../public/bruit.png'
+import skiviewpic from '../../public/skiview.png'
+import quizzypic from '../../public/quizzy.png'
+import flashcardspic from '../../public/flashcards.png'
 
 const Home: React.FC = (): ReactElement => {
     const rightRef = useRef<HTMLDivElement>(null);
@@ -30,7 +32,7 @@ const Home: React.FC = (): ReactElement => {
 
             const newActiveStates = sectionRefs.current.map((section) => {
                 const sectionTop = section.getBoundingClientRect().top;
-                return sectionTop <= containerTop + 0 && sectionTop + section.offsetHeight > containerTop + 0; // threshold
+                return sectionTop <= containerTop + 2 && sectionTop + section.offsetHeight > containerTop + 2; // threshold
             });
 
             setActiveStates(newActiveStates);
@@ -69,8 +71,8 @@ const Home: React.FC = (): ReactElement => {
 
     let imagesArr: string[] = []
     imagesArr.push(bruitpic)
-    imagesArr.push("")
-    imagesArr.push("")
+    imagesArr.push(flashcardspic)
+    imagesArr.push(quizzypic)
     imagesArr.push(skiviewpic)
     
     return(

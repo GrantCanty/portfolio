@@ -31,7 +31,7 @@
             {
                 "title": "Flashcards",
                 "description": "Developed a flashcard Web App using React for front end and Golang for back end. Users can edit or review flashcard decks as well as create new flashcard decks. Each flashcard deck contains individual flashcards with a description and an answer. Flashcard decks and each flashcard are saved in memory. This project takes advantage of the React Router for the different edit/review functionalities and state for a  form to input data to create new flashcard decks.",
-                "url": "test",
+                "url": "https://github.com/GrantCanty/flashcards",
                 "tech_stack": [
                     "Go",
                     "React",
@@ -42,7 +42,7 @@
             {
                 "title": "Quizzy",
                 "description": "Designed a program using C++ that lets a user create a quiz containing true/false, multiple choice, and longanswer questions. This project takes advantage of inheritance by using an Answer parent class that is extended by children classes with their respective answer types. The quiz is able to be saved locally as a text file.",
-                "url": "test",
+                "url": "https://github.com/GrantCanty/quizzy",
                 "tech_stack": [
                     "C++"
                 ]
@@ -125,17 +125,17 @@
         ],
         "portfolio": [
             {
-                "title": "Quizzy",
-                "description": "Programme en C++ qui permet à l'utilisateur de créer un quiz contenant des questions vrai/faux, à choix multiples et à réponse longue. Le quiz peut être sauvegardé localement sous forme de fichier texte.",
-                "url": "test",
+                "title": "Client Crypto",
+                "description": "Un système automatisé en Golang pour placer des transactions pour les cryptocurrencies qui met en œuvre des stratégies de trading personnalisées définies par les utilisateurs. Programmation d'un client pour les API Rest et Websocket de la bourse de crypto-monnaies Kraken. Mise en œuvre de la concurrence, des canaux, des mutex et des listes liées. Utilisation d'InfluxDB pour le stockage de données de séries temporelles.",
+                "url": "https://github.com/GrantCanty/bruit",
                 "tech_stack": [
-                    "C++"
+                    "Go"
                 ]
             },
             {
                 "title": "Flashcards",
-                "description": "Application web de flashcards en utilisant React pour le front-end et Golang pour le back-end. Les utilisateurs peuvent éditer ou réviser des jeux de flashcards, créer de nouveaux jeux de flashcards et ajouter des flashcards. Les flashcards sont sauvegardées sur le serveur.",
-                "url": "test",
+                "description": "Application web de flashcards en utilisant React pour le front-end et Golang pour le back-end. Les utilisateurs peuvent éditer ou réviser des jeux de flashcards, créer de nouveaux jeux de flashcards et ajouter des flashcards. Les flashcards sont sauvegardées sur le serveur. Ce projet tire parti de React Router pour les différentes fonctionnalités d'édition/révision et de State pour un formulaire de saisie de données permettant de créer de nouveaux jeux de flashcards.",
+                "url": "https://github.com/GrantCanty/flashcards",
                 "tech_stack": [
                     "Go",
                     "React",
@@ -144,20 +144,20 @@
                 ]
             },
             {
-                "title": "SkiView",
-                "description": "Création d'une application Web en React pour fournir les conditions météorologiques actuelles dans les stations de ski en utilisant les coordonnées de longitude et de latitude d'une station. La liste des stations de ski peut être modifiée.",
-                "url": "test",
+                "title": "Quizzy",
+                "description": "Programme en C++ qui permet à l'utilisateur de créer un quiz contenant des questions vrai/faux, à choix multiples et à réponse longue. Ce projet tire parti de l'héritage en utilisant une classe parentale Answer qui est étendue par des classes enfants avec leurs types de réponses respectifs. Le quiz peut être sauvegardé localement sous forme de fichier texte.",
+                "url": "https://github.com/GrantCanty/quizzy",
                 "tech_stack": [
-                    "React",
-                    "JavaScript"
+                    "C++"
                 ]
             },
             {
-                "title": "Client Crypto",
-                "description": "Client API de l'échange Kraken Crypto en utilisant Golang avec des websockets et le concurrence.",
-                "url": "https://github.com/GrantCanty/bruit",
+                "title": "SkiView",
+                "description": "J'ai créé une application Web en React pour fournir les conditions météorologiques actuelles dans les stations de ski en utilisant les coordonnées de longitude et de latitude d'une station. La liste des stations de ski peut être modifiée.",
+                "url": "https://ski-view.vercel.app/",
                 "tech_stack": [
-                    "Go"
+                    "React",
+                    "JavaScript"
                 ]
             }
             
@@ -197,23 +197,15 @@
                 "university": "CNAM",
                 "location": "Paris",
                 "major": "Intelligence artificielle et réseaux informatiques",
-                "description": "test test test test"
+                "description": "Je suis des cours sur l'intelligence artificielle, la recherche opérationnelle, l'architecture informatique, etc."
             },
             {
                 "start": "2017",
                 "end": "2021",
                 "university": "Ohio University",
                 "location": "Athens, Ohio, États-Unis",
-                "major": "Finance",
-                "description": "test test test test"
-            },
-            {
-                "start": "2017",
-                "end": "2021",
-                "university": "Ohio University",
-                "location": "Athens, Ohio, États-Unis",
-                "major": "Commerce internationale",
-                "description": "test test test test"
+                "major": "Finance, Commerce internationale",
+                "description": "J'ai complété deux majeures en finance et en commerce international, en suivant des cours sur l'évaluation financière, l'entrée sur le marché international, la gestion bancaire, le leadership interculturel et plus encore."
             }
         ]
     }
