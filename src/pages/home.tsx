@@ -15,11 +15,13 @@ import skiviewpic from '../../public/skiview.png'
 import quizzypic from '../../public/quizzy.png'
 import flashcardspic from '../../public/flashcards.png'
 
+type Lang = 'en' | 'fr'
+
 const Home: React.FC = (): ReactElement => {
     const rightRef = useRef<HTMLDivElement>(null);
     const sectionRefs = useRef<HTMLDivElement[]>([]);
 
-    const [lang, setLang] = useState<string>("en");
+    const [lang, setLang] = useState<Lang>("en");
     const [activeStates, setActiveStates] = useState<boolean[]>([true, false, false, false, false])
 
     function toggleLang() {

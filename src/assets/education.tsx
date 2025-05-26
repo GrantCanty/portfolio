@@ -3,6 +3,8 @@ import text from '../data/text.json'
 
 let info = Object(text);
 
+type Lang = 'en' | 'fr'
+
 interface education {
     start: string;
     end: string;
@@ -13,12 +15,13 @@ interface education {
 }
 
 interface Props {
-    lang: string;
+    lang: Lang;
 }
 
 const Education: React.FC<Props> = (props): ReactElement => {
     return(
         <div id='education' className='education'>
+            <h2>{info[props.lang]['navigation']['education']}</h2>
             {info[props.lang]['education'].map((ele: education, key: number) => {
                 return (
                     <div key={key} className='showcase-item'>

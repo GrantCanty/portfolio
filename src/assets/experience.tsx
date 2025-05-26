@@ -4,6 +4,8 @@ import '../styles/showcase.css'
 
 let info = Object(text);
 
+type Lang = 'en' | 'fr'
+
 interface experience {
     start: string;
     end: string;
@@ -14,12 +16,13 @@ interface experience {
 }
 
 interface Props {
-    lang: string;
+    lang: Lang;
 }
 
 const Experience: React.FC<Props> = (props): ReactElement => {
     return(
         <div id='experience' className='experience'>
+            <h2>{info[props.lang]['navigation']['experience']}</h2>
             {info[props.lang]['experience'].map((ele: experience, key: number) => {
                 return (
                     <div key={key} className='showcase-item'>

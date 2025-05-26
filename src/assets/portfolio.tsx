@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 let info = Object(text);
 
+type Lang = 'en' | 'fr'
+
 interface portfolio {
     title: string;
     description: string;
@@ -13,14 +15,14 @@ interface portfolio {
 }
 
 interface Props {
-    lang: string;
+    lang: Lang;
     images: string[];
 }
 
 const Portfolio: React.FC<Props> = (props): ReactElement => {
-    
     return(
         <div id='portfolio' className='portfolio'>
+            <h2>{info[props.lang]['navigation']['portfolio']}</h2>
             {info[props.lang]['portfolio'].map((ele: portfolio, key: number) => {
                 return (
                     <Link key={key} to={ele.url}>
