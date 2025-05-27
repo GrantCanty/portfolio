@@ -3,7 +3,6 @@ import Me from '../assets/me'
 import Navigation from '../assets/navigation'
 import About from '../assets/about'
 import Portfolio from '../assets/portfolio'
-import Resume from '../assets/resume'
 import Experience from '../assets/experience'
 import Education from '../assets/education'
 import Social from '../assets/social'
@@ -14,6 +13,11 @@ import bruitpic from '../../public/bruit.png'
 import skiviewpic from '../../public/skiview.png'
 import quizzypic from '../../public/quizzy.png'
 import flashcardspic from '../../public/flashcards.png'
+import soundclassifierpic from '../../public/sound_classifier.png'
+import aiml1pic from '../../public/ai & ml lab 1.png'
+import aiml2pic from '../../public/ai & ml lab 2.png'
+import fedlearningpic from '../../public/fed_learning.png'
+import bigdatapic from '../../public/big_data.png'
 
 type Lang = 'en' | 'fr'
 
@@ -72,6 +76,12 @@ const Home: React.FC = (): ReactElement => {
     }, []);
 
     let imagesArr: string[] = []
+    imagesArr.push(bigdatapic)
+    imagesArr.push(soundclassifierpic)
+    imagesArr.push(fedlearningpic)
+    imagesArr.push(aiml1pic)
+    imagesArr.push(aiml2pic)
+
     imagesArr.push(bruitpic)
     imagesArr.push(flashcardspic)
     imagesArr.push(quizzypic)
@@ -104,9 +114,9 @@ const Home: React.FC = (): ReactElement => {
                                 <div className="section" ref={(el) => (sectionRefs.current[3] = el!)}>
                                     <Education lang={lang} />
                                 </div>
-                                <div className="section" ref={(el) => (sectionRefs.current[4] = el!)}>
+                                {/*<div className="section" ref={(el) => (sectionRefs.current[4] = el!)}>
                                     <Resume />
-                                </div>
+                                </div>*/}
                             </main>
                         </div>
                     </div>

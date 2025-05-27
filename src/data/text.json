@@ -20,13 +20,68 @@
         ],
         "portfolio": [
             {
-                "title": "Crypto Trader",
+                "title": "Big Data Project",
+                "description": "Created Machine Learning system using TensorFlow in team of 3 that predicted waste levels for a city, generated routes for garbage trucks to collect full waste bins, and used Docker to work in real time. This project used real data historical waste, temperature, census, and garage location data from New York City.",
+                "url": "https://github.com/GrantCanty/BDT_STC",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Networkx",
+                    "OpenCage",
+                    "DuckDB"
+                ]
+            },
+            {
+                "title": "Sound Classifier",
+                "description": "Developing an audio classification system to distinguish instrument categories and playback intent (loop vs one-shot, forward vs reverse) using a CNN-GRU architecture on spectral and feature data.",
+                "url": "https://github.com/GrantCanty/sound_classifier",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Librosa"
+                ]
+            },
+            {
+                "title": "Federated and Distributed Lab 1",
+                "description": "Created a Federated and Distributed Learning system using Flower and PyTorch. The system has dynamic hyper parameters like number of clients, number of rounds, learning rate, alpha dirichlet, and more. The system is able to generate plots on the model's system's learning history.",
+                "url": "https://github.com/GrantCanty/fed_learning_tp1",
+                "tech_stack": [
+                    "Python",
+                    "Flower",
+                    "PyTorch"
+                ]
+            },
+            {
+                "title": "AI & ML Lab 1",
+                "description": "Worked in team of 3 to explore Neural Networks classification on Fashion MNIST and how changes to hyper parameters affect the performance of the model. Some of the experimentations we made were on changing the learning rate, the number of layers, the neuron count for individual layers.",
+                "url": "https://github.com/GrantCanty/AI-ML-Lab-1",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Matplotlib"
+                ]
+            },
+            {
+                "title": "AI & ML Lab 2",
+                "description": "Explored Recurrent Neural Networks on Chicago Transit Authority Daily Boarding Totals dataset to observe how adjustments to the model’s performance. Adjustments we made were to batch sizes, activation functions, the optimizer, weight initializations, and more.",
+                "url": "https://github.com/GrantCanty/AI-ML-Lab-2",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Matplotlib"
+                ]
+            },
+            {
+                "title": "Crypto Trader (Bruit)",
                 "description": "Building an automated system in Golang to place trades for cryptocurrencies that implements custom trading strategies defined by users. Programmed a client for the Kraken Crypto exchange Rest and Websocket APIs. Implementing concurrency, channels, mutexes & linked lists. Using InfluxDB for time series data storage.",
                 "url": "https://github.com/GrantCanty/bruit",
                 "tech_stack": [
                     "Go"
-                ],
-                "img_path": "../images/bruit.png"
+                ]
             },
             {
                 "title": "Flashcards",
@@ -92,7 +147,7 @@
                 "university": "CNAM",
                 "location": "Paris, France",
                 "major": "Artificial Intelligence and Computer Networks",
-                "description": "Taking courses on Artificial Intelligence, Operational Research, Computer Architecture & more."
+                "description": "Taking courses on Machine Learning, Big Data, Distributed & Federated Learning, Operations Research, and more."
             },
             {
                 "start": "2017",
@@ -124,6 +179,62 @@
             "Pendant mon temps libre, j'adore explorer Paris, faire de la musique, du snowboard, voyager, et travailler sur des projets de programmation."
         ],
         "portfolio": [
+            {
+                "title": "Projet Big Data",
+                "description": "Création d'un système d'apprentissage automatique avec TensorFlow en équipe de 3 personnes, visant à prédire les niveaux de déchets dans une ville, à générer des itinéraires pour les camions de collecte afin de ramasser les bennes pleines, et à utiliser Docker pour un fonctionnement en temps réel. Ce projet utilisait des données réelles historiques sur les déchets, la température, le recensement, ainsi que la localisation des garages de la ville de New York.",
+                "url": "https://github.com/GrantCanty/BDT_STC",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Networkx",
+                    "OpenCage",
+                    "DuckDB"
+                ]
+            },
+            {
+                "title": "Classificateur de sons",
+                "description": "Développement d'un système de classification audio utilisant Librosa et TensorFlow pour distinguer les catégories d'instruments et les intentions de lecture (boucle vs lecture unique, avant vs arrière), en s'appuyant sur une architecture CNN-GRU exploitant les données spectrales et les caractéristiques audio.",
+                "url": "https://github.com/GrantCanty/sound_classifier",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Librosa"
+                ]
+            },
+            {
+                "title": "Laboratoire de Données Fédérées 1",
+                "description": "Création d'un système d'apprentissage fédéré et distribué utilisant Flower et PyTorch. Le système comprend des hyperparamètres dynamiques tels que le nombre de clients, le nombre de cycles, le taux d'apprentissage, l'alpha de Dirichlet, entre autres. Le système peut générer des graphiques illustrant l'historique d'apprentissage du modèle.",
+                "url": "https://github.com/GrantCanty/fed_learning_tp1",
+                "tech_stack": [
+                    "Python",
+                    "Flower",
+                    "PyTorch"
+                ]
+            },
+            {
+                "title": "Laboratoire d'IA 1",
+                "description": "Travail en équipe de 3 personnes pour explorer la classification par réseaux neuronaux sur le jeu de données Fashion MNIST et l'impact des modifications d'hyperparamètres sur la performance du modèle. Parmi les expérimentations menées : modification du taux d'apprentissage, du nombre de couches, et du nombre de neurones par couche.",
+                "url": "https://github.com/GrantCanty/AI-ML-Lab-1",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Matplotlib"
+                ]
+            },
+            {
+                "title": "Laboratoire d'IA 2",
+                "description": "Exploration des réseaux neuronaux récurrents sur le jeu de données des totaux d'embarquement quotidiens de la Chicago Transit Authority, afin d'observer l'impact des ajustements sur la performance du modèle. Les ajustements incluaient les tailles de batch, les fonctions d'activation, l'optimiseur, l'initialisation des poids, et d'autres paramètres.",
+                "url": "https://github.com/GrantCanty/AI-ML-Lab-2",
+                "tech_stack": [
+                    "Python",
+                    "TensorFlow",
+                    "Pandas",
+                    "Matplotlib"
+                ]
+            },
             {
                 "title": "Client Crypto",
                 "description": "Un système automatisé en Golang pour placer des transactions pour les cryptocurrencies qui met en œuvre des stratégies de trading personnalisées définies par les utilisateurs. Programmation d'un client pour les API Rest et Websocket de la bourse de crypto-monnaies Kraken. Mise en œuvre de la concurrence, des canaux, des mutex et des listes liées. Utilisation d'InfluxDB pour le stockage de données de séries temporelles.",
